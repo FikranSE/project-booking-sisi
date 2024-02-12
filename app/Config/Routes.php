@@ -12,7 +12,8 @@ $routes->get('user/dashboard', 'RuanganControllers::booking_ruangan');
 $routes->get('login', 'Auth::login');
 
 
-$routes->get('admin/History', 'HistoryControllers::index');
+$routes->get('admin/monruangan', 'HistoryControllers::monruangan');
+$routes->get('admin/mondriver', 'HistoryControllers::mondriver');
 $routes->get('admin/BookingRequest', 'HistoryControllers::BookingRequest');
 $routes->get('admin/dashboard_admin', 'HistoryControllers::dashboard');
 

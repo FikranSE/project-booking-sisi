@@ -17,7 +17,7 @@
         </a>
         <div class="sub-menu">
           <a class="nav-link" href="<?= site_url('admin/BookingRequest'); ?>" class="sub-item">Booking Ruangan</a>
-          <a href="#" class="sub-item">Booking Driver</a>
+          <a class="nav-link" href="#" class="sub-item">Booking Driver</a>
         </div>
       </li>
       <li>
@@ -49,8 +49,8 @@
           <i class="bi bi-chevron-right dropdown"></i>
         </a>
         <div class="sub-menu">
-          <a class="nav-link" href="<?= site_url('admin/History'); ?>" class="sub-item">Monitoring Ruangan</a>
-          <a href="#" class="sub-item">Monitoring Driver</a>
+          <a class="nav-link" href="<?= site_url('admin/monruangan'); ?>" class="sub-item">Monitoring Ruangan</a>
+          <a class="nav-link" href="<?= site_url('admin/mondriver'); ?>" class="sub-item">Monitoring Driver</a>
         </div>
       </li>
 

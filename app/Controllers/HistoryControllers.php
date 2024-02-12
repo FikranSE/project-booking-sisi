@@ -9,16 +9,23 @@ use App\Models\bokdriverModel;
 
 class HistoryControllers extends BaseController
 {
-    public function index()
+    public function monruangan()
     {
         $bokruanganModel = new bokruanganModel();
         $data['bookRoom'] =  $bokruanganModel->findAll();
 
+        $mergedData = array_merge($data['bookRoom'], $data['bookRoom']);
+        return view('admin/monruangan', ['rekapData' => $mergedData]);
+    }
+
+    public function mondriver()
+    {
+
         $bokDriverModel = new bokdriverModel();
         $data['bookdriver'] =  $bokDriverModel->findAll();
 
-        $mergedData = array_merge($data['bookRoom'], $data['bookRoom']);
-        return view('admin/History', ['rekapData' => $mergedData]);
+        $mergedData = array_merge($data['bookdriver'], $data['bookdriver']);
+        return view('admin/mondriver', ['rekapData' => $mergedData]);
     }
 
     public function BookingRequest()

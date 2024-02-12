@@ -1,7 +1,7 @@
 <?= $this->extend('admin/templet/layout'); ?>
 <?= $this->section('content'); ?>
 <main class="main-content">
-  <h2 style="margin-left: 35px;">Monitoring</h2>
+  <h2 style="margin-left: 35px;">Monitoring Driver</h2>
 
   <div class="haloa" style="display: flex; justify-content: space-between; align-items: center;">
     <div style="display: flex; align-items: center;">
@@ -36,7 +36,7 @@
               <td class="small-text"><?= $data['fasilitas']; ?></td>
               <td class="small-text">
                 <div class="icon-container" style="margin-left: 35%;">
-                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_ruangan'"></i>
+                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_driver'"></i>
                   <i class="fa-solid fa-trash"></i>
                 </div>
               </td>
