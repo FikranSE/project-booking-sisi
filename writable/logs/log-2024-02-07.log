@@ -1,0 +1,1237 @@
+INFO - 2024-02-07 01:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 01:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 01:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
+CRITICAL - 2024-02-07 05:42:29 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-02-07 05:42:29 --> ErrorException: Uncaught Error: Class "Locale" not found in E:\ANDALAS - MINE\KP\project_booking\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 E:\ANDALAS - MINE\KP\project_booking\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 E:\ANDALAS - MINE\KP\project_booking\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 E:\ANDALAS - MINE\KP\project_booking\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 E:\ANDALAS - MINE\KP\project_booking\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 E:\ANDALAS - MINE\KP\project_booking\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 E:\ANDALAS - MINE\KP\project_booking\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 E:\ANDALAS - MINE\KP\project_booking\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 E:\ANDALAS - MINE\KP\project_booking\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+=======
+CRITICAL - 2024-02-07 02:16:07 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\admin\Driver.php on line 98.
+ 1 APPPATH\Views\admin\Driver.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php', 98)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/Driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(16): view('admin/Driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:18:39 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Driver.php on line 53.
+ 1 APPPATH\Controllers\Driver.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'H:\\ACA\\K TO P\\project\\app\\Controllers\\Driver.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:21:05 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Driver.php on line 53.
+ 1 APPPATH\Controllers\Driver.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'H:\\ACA\\K TO P\\project\\app\\Controllers\\Driver.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:21:06 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Driver.php on line 53.
+ 1 APPPATH\Controllers\Driver.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'H:\\ACA\\K TO P\\project\\app\\Controllers\\Driver.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:23:37 --> ErrorException: Undefined variable $driver
+in APPPATH\Views\admin\edit_driver.php on line 66.
+ 1 APPPATH\Views\admin\edit_driver.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $driver', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(50): view('admin/edit_driver')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:26:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Driver.php(71): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:26:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Driver.php(71): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:27:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Driver.php(71): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:28:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Driver.php(71): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:28:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Driver.php(71): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:29:16 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Driver.php(73): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:29:24 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Driver.php(73): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:29:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Driver.php(76): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:31:45 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Driver.php(76): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:34:20 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Driver.php(74): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->simpan_edit_driver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:45:04 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:52:40 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:54:30 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:55:42 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:55:43 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:56:42 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 02:57:34 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\admin\edit_driver.php on line 62.
+ 1 APPPATH\Views\admin\edit_driver.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(58): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:07:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:12:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::edit_driver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:20:00 --> ErrorException: Undefined array key "nama"
+in APPPATH\Views\admin\edit_driver.php on line 66.
+ 1 APPPATH\Views\admin\edit_driver.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(54): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:20:51 --> ErrorException: Undefined array key "nama"
+in APPPATH\Views\admin\edit_driver.php on line 66.
+ 1 APPPATH\Views\admin\edit_driver.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(54): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->edit_driver()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:41:54 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\admin\Driver.php on line 98.
+ 1 APPPATH\Views\admin\Driver.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php', 98)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/Driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(16): view('admin/Driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:42:03 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\admin\Driver.php on line 98.
+ 1 APPPATH\Views\admin\Driver.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php', 98)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/Driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(16): view('admin/Driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 03:52:58 --> ParseError: Unclosed '{' on line 10
+in APPPATH\Controllers\Driver.php on line 77.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('H:\\ACA\\K TO P\\project\\app\\Controllers\\Driver.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Driver')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Driver')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Driver', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:06:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Driver.php(69): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:07:48 --> BadMethodCallException: Call to undefined method App\Models\DriverModel::updateDriver
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Driver.php(69): CodeIgniter\Model->__call('updateDriver', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:11:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(14): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:12:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(14): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:48:26 --> ArgumentCountError: Too few arguments to function CodeIgniter\BaseModel::save(), 0 passed in H:\ACA\K TO P\project\app\Models\DriverModel.php on line 17 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 704.
+ 1 APPPATH\Models\DriverModel.php(17): CodeIgniter\BaseModel->save()
+ 2 APPPATH\Controllers\Driver.php(73): App\Models\DriverModel->updateDriver(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:48:39 --> ArgumentCountError: Too few arguments to function CodeIgniter\BaseModel::save(), 0 passed in H:\ACA\K TO P\project\app\Models\DriverModel.php on line 17 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 704.
+ 1 APPPATH\Models\DriverModel.php(17): CodeIgniter\BaseModel->save()
+ 2 APPPATH\Controllers\Driver.php(73): App\Models\DriverModel->updateDriver(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:56:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(15): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:57:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(15): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 04:59:47 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\admin\edit_driver.php on line 66.
+ 1 APPPATH\Views\admin\edit_driver.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(55): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->editDriver('Driver')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 05:03:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(15): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 05:05:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(15): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 05:05:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\DriverModel.php(15): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Driver.php(69): App\Models\DriverModel->updateDriver(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 05:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 05:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 05:58:51 --> ErrorException: Undefined variable $data
+in APPPATH\Views\admin\edit_driver.php on line 63.
+ 1 APPPATH\Views\admin\edit_driver.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(61): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->editDriver('D_001')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:04:59 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::updateDriver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:05:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::updateDriver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:05:42 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::updateDriver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:06:42 --> ArgumentCountError: Too few arguments to function App\Controllers\Driver::updateDriver(), 0 passed in H:\ACA\K TO P\project\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Driver.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->updateDriver()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:11:41 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\admin\edit_driver.php on line 63.
+ 1 APPPATH\Views\admin\edit_driver.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(61): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->editDriver('D_007')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 06:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 06:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 06:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 06:18:10 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\admin\Driver.php on line 101.
+ 1 APPPATH\Views\admin\Driver.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php', 101)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/Driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(16): view('admin/Driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:18:21 --> ErrorException: Undefined array key "id_driver"
+in APPPATH\Views\admin\Driver.php on line 101.
+ 1 APPPATH\Views\admin\Driver.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_driver"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php', 101)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/Driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(16): view('admin/Driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:18:23 --> ErrorException: Undefined array key "id_driver"
+in APPPATH\Views\admin\Driver.php on line 101.
+ 1 APPPATH\Views\admin\Driver.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_driver"', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php', 101)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\Driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/Driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(16): view('admin/Driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 06:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 06:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-07 06:34:20 --> mysqli_sql_exception: Unknown column 'ruangan.id' in 'where clause' in H:\ACA\K TO P\project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 H:\ACA\K TO P\project\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 H:\ACA\K TO P\project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 H:\ACA\K TO P\project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 H:\ACA\K TO P\project\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 H:\ACA\K TO P\project\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\ACA\K TO P\project\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 'R_003')
+#6 H:\ACA\K TO P\project\app\Controllers\RuanganControllers.php(48): CodeIgniter\BaseModel->find('R_003')
+#7 H:\ACA\K TO P\project\system\CodeIgniter.php(941): App\Controllers\RuanganControllers->edit_ruangan('R_003')
+#8 H:\ACA\K TO P\project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+#9 H:\ACA\K TO P\project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 H:\ACA\K TO P\project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 H:\ACA\K TO P\project\system\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\p...')
+#12 {main}
+CRITICAL - 2024-02-07 06:34:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ruangan.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = :ruangan.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 'R_003')
+ 4 APPPATH\Controllers\RuanganControllers.php(48): CodeIgniter\BaseModel->find('R_003')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->edit_ruangan('R_003')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:34:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ruangan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = \'R_003\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = \'R_003\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = :ruangan.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 'R_003')
+ 6 APPPATH\Controllers\RuanganControllers.php(48): CodeIgniter\BaseModel->find('R_003')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->edit_ruangan('R_003')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:34:20 --> [Caused by] mysqli_sql_exception: Unknown column 'ruangan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = \'R_003\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = \'R_003\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = \'R_003\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ruangan`
+WHERE `ruangan`.`id` = :ruangan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 'R_003')
+ 7 APPPATH\Controllers\RuanganControllers.php(48): CodeIgniter\BaseModel->find('R_003')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->edit_ruangan('R_003')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:35:44 --> ParseError: syntax error, unexpected token ">", expecting end of file
+in APPPATH\Views\admin\edit_ruangan.php on line 66.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganControllers.php(55): view('admin/edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->edit_ruangan('R_003')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 06:36:06 --> ErrorException: Undefined variable $driver
+in APPPATH\Views\admin\edit_ruangan.php on line 66.
+ 1 APPPATH\Views\admin\edit_ruangan.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $driver', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_ruangan.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_ruangan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_ruangan', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(55): view('admin/edit_ruangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->edit_ruangan('R_003')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 07:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 07:12:43 --> ErrorException: Undefined variable $room
+in APPPATH\Views\admin\edit_driver.php on line 63.
+ 1 APPPATH\Views\admin\edit_driver.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $room', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_driver.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_driver', [], true)
+ 5 APPPATH\Controllers\Driver.php(60): view('admin/edit_driver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Driver->editDriver('D_005')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Driver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 07:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 07:41:10 --> ErrorException: Undefined variable $user
+in APPPATH\Views\admin\edit_user.php on line 63.
+ 1 APPPATH\Views\admin\edit_user.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_user.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_user', [], true)
+ 5 APPPATH\Controllers\Auth.php(104): view('admin/edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->editusers('aca')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 07:41:21 --> ErrorException: Undefined variable $room
+in APPPATH\Views\admin\edit_user.php on line 66.
+ 1 APPPATH\Views\admin\edit_user.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $room', 'H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_user.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\admin\\edit_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_user', [], true)
+ 5 APPPATH\Controllers\Auth.php(104): view('admin/edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->editusers('aca')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 07:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-07 07:54:10 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in H:\ACA\K TO P\project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 H:\ACA\K TO P\project\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 H:\ACA\K TO P\project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 H:\ACA\K TO P\project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 H:\ACA\K TO P\project\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 H:\ACA\K TO P\project\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\ACA\K TO P\project\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', Array, NULL, 'username')
+#6 H:\ACA\K TO P\project\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', Array, Array)
+#7 H:\ACA\K TO P\project\app\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+#8 H:\ACA\K TO P\project\system\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+#9 H:\ACA\K TO P\project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 H:\ACA\K TO P\project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 H:\ACA\K TO P\project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 H:\ACA\K TO P\project\system\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\p...')
+#13 {main}
+CRITICAL - 2024-02-07 07:54:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', [...], null, 'username')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', [...], [...])
+ 5 APPPATH\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 07:54:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', [...], null, 'username')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', [...], [...])
+ 7 APPPATH\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 07:54:10 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', [...], null, 'username')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', [...], [...])
+ 8 APPPATH\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+ERROR - 2024-02-07 07:55:27 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in H:\ACA\K TO P\project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 H:\ACA\K TO P\project\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 H:\ACA\K TO P\project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 H:\ACA\K TO P\project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 H:\ACA\K TO P\project\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 H:\ACA\K TO P\project\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 H:\ACA\K TO P\project\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', Array, NULL, 'username')
+#6 H:\ACA\K TO P\project\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', Array, Array)
+#7 H:\ACA\K TO P\project\app\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+#8 H:\ACA\K TO P\project\system\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+#9 H:\ACA\K TO P\project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 H:\ACA\K TO P\project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 H:\ACA\K TO P\project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 H:\ACA\K TO P\project\system\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\p...')
+#13 {main}
+CRITICAL - 2024-02-07 07:55:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', [...], null, 'username')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', [...], [...])
+ 5 APPPATH\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 07:55:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', [...], null, 'username')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', [...], [...])
+ 7 APPPATH\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 07:55:28 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'aca\'
+AND `id` != \'aca\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('aca', 'username', [...], null, 'username')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'aca', [...], [...])
+ 8 APPPATH\Controllers\Auth.php(119): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->updateusers('aca')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 07:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 07:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 08:38:06 --> ErrorException: Undefined variable $driver
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $driver', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:40:53 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:40:54 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:40:55 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 08:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 08:41:04 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:41:37 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:25 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:26 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:26 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:27 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:45:39 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:48:32 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:48:34 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:51:22 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:53:10 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:53:11 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:53:11 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:57:41 --> Error: Call to undefined function get()
+in APPPATH\Config\Routes.php on line 14.
+ 1 SYSTEMPATH\Router\RouteCollection.php(344): require()
+ 2 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:59:51 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 09:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 09:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 09:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 09:02:50 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:05:20 --> ErrorException: Undefined variable $bookruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:05:21 --> ErrorException: Undefined variable $bookruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:18 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:20 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:20 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:29 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:08:37 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:08:38 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:08:38 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:13:40 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:14:49 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+>>>>>>> 388111ae696d4e49d3781e6d42e3c28534c153a1
