@@ -1,26 +1,29 @@
 <?= $this->extend('admin/templet/layout'); ?>
 <?= $this->section('content'); ?>
+
 <main class="main-content">
   <div style="margin-left: 35px;">
     <h2>Edit Data Ruangan</h2>
-    <form action="<?= site_url('admin/edit_ruangan'); ?>" method="post">
+    <form action="<?= site_url('admin/updateRuangan/' . $room['id_ruangan']); ?>" method="post">
+      <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
       <div class="card-body">
         <div class="form-group row">
           <div class="col-sm-6 mb-3">
             <label for="Nama-ruangan" style="color: #281362; font-weight: 600;">Nama Ruangan <sup class="text-danger">*</sup></label>
-            <input type="text" class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Ruangan">
+            <input type="text" class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Ruangan" value="<?= set_value('nama', $room['nama']); ?>">
           </div>
           <div class="col-sm-6 mb-3">
             <label for="Kapasitas" style="color: #281362; font-weight: 600;">Kapasitas <sup class="text-danger">*</sup></label>
-            <input type="text" class="form-control" id="kapasitas" name="kapasitas" style="width: 80%; border-radius: 10px;" placeholder="Kapasitas">
+            <input type="text" class="form-control" id="kapasitas" name="kapasitas" style="width: 80%; border-radius: 10px;" placeholder="Kapasitas" value="<?= set_value('kapasitas', $room['kapasitas']); ?>">
           </div>
           <div class="col-sm-12 mb-3">
             <label for="fasilitas" style="color: #281362; font-weight: 600;">fasilitas <sup class="text-danger">*</sup></label>
-            <textarea class="form-control" id="fasilitas" name="fasilitas" rows="3" style="width: 90%; border-radius: 10px;" placeholder="Fasilitas"></textarea>
+            <textarea class="form-control" id="fasilitas" name="fasilitas" rows="3" style="width: 90%; border-radius: 10px;" placeholder="Fasilitas"><?= set_value('fasilitas', $room['fasilitas']); ?></textarea>
           </div>
         </div>
 
         <div class="form-group row justify-content-between text-right">
+
           <div class="col-sm-6">
             <!-- <button class="btn btn-outline-primary" style="color: #281362; box-shadow: 2px 2px 5px #888888; border-radius: 20px;">Batal</button> -->
           </div>

@@ -16,8 +16,8 @@
           <i class="bi bi-chevron-right dropdown"></i>
         </a>
         <div class="sub-menu">
-          <a class="nav-link" href="<?= site_url('admin/BookingRequest'); ?>" class="sub-item">Booking Ruangan</a>
-          <a class="nav-link" href="#" class="sub-item">Booking Driver</a>
+          <a class="nav-link" href="<?= site_url('admin/BookRoom'); ?>" class="sub-item">Booking Ruangan</a>
+          <a class="nav-link" href="<?= site_url('admin/booking_driver'); ?>"  class="sub-item">Booking Driver</a>
         </div>
       </li>
       <li>

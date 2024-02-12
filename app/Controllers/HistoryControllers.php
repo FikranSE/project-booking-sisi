@@ -28,13 +28,6 @@ class HistoryControllers extends BaseController
         return view('admin/mondriver', ['rekapData' => $mergedData]);
     }
 
-    public function BookingRequest()
-    {
-        
-        $data['active_tab'] = 'dashboard_admin';
-        return view('admin/BookingRequest', $data);
-    }
-
     public function dashboard()
     {
         $data['active_tab'] = 'dashboard_admin';
