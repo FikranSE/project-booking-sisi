@@ -28,17 +28,23 @@ class HistoryControllers extends BaseController
         return view('admin/mondriver', ['rekapData' => $mergedData]);
     }
 
-    public function BookingRequest()
-    {
-        
-        $data['active_tab'] = 'dashboard_admin';
-        return view('admin/BookingRequest', $data);
-    }
-
     public function dashboard()
     {
+        $bokruanganModel = new bokruanganModel();
+        $bokDriverModel = new bokdriverModel();
+
         $data['active_tab'] = 'dashboard_admin';
+        $data['totalBookingRuangan'] = $bokruanganModel->getTotalBookingCount();
+        $data['totalBookingdriver'] =   $bokDriverModel->getTotalBookingCount();
+        $data['totalActivities'] = $data['totalBookingdriver'] + $data['totalBookingRuangan'];
+
+
+        $todayDate = date('Y-m-d');
+        $data['roomBookings'] = $bokruanganModel->getBookingsForToday($todayDate, 'pending');
+        $data['driverBookings'] = $bokDriverModel->getBookingsForToday($todayDate, 'pending');
 
         return view('admin/dashboard_admin', $data);
     }
+
+  
 }

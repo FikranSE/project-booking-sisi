@@ -1,5 +1,7 @@
 <?= $this->extend('admin/templet/layout'); ?>
 <?= $this->section('content'); ?>
+
+
 <main class="main-content">
   <h2 style="margin-left: 35px;">List Ruangan</h2>
 
@@ -18,6 +20,14 @@
     </div>
   </div>
 
+
+  <?php
+  $items_per_page = 10;
+  $page = isset($_GET['page']) ? $_GET['page'] : 1;
+  $start_index = ($page - 1) * $items_per_page;
+  $total_pages = ceil(count($room) / $items_per_page);
+  ?>
+
   <form class="styled-box-6">
     <div class="table-responsive">
       <table role="table" aria-busy="false" aria-colcount="6" class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table" id="__BVID__56">
@@ -28,13 +38,11 @@
             <th style="text-align: center;">Kapasitas</th>
             <th style="text-align: center;">Fasilitas</th>
             <th style="text-align: center;">Aksi</th>
-
-
           </tr>
         </thead>
         <tbody>
-          <?php $counter = 1; ?>
-          <?php foreach ($room as $R) : ?>
+          <?php $counter = $start_index + 1; ?>
+          <?php foreach (array_slice($room, $start_index, $items_per_page) as $R) : ?>
             <tr>
               <td style="text-align: center;"><?= $counter++; ?></td>
               <td class="small-text"><?= $R['nama']; ?></td>
@@ -42,25 +50,41 @@
               <td class="small-text"><?= $R['fasilitas']; ?></td>
               <td class="small-text">
                 <div class="icon-container" style="margin-left: 35%;">
-                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_ruangan'"></i>
-                  <i class="fa-solid fa-trash"></i>
+                  <a href="<?= site_url('admin/edit_ruangan/' . $R['id_ruangan']); ?>">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </a>
+                  <a href="<?= site_url('admin/deleteRuangan/' . $R['id_ruangan']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus ruangan ini?')">
+                    <i class="fa-solid fa-trash"></i>
+                  </a>
                 </div>
               </td>
             </tr>
           <?php endforeach; ?>
+        </tbody>
       </table>
     </div>
+
     <div class="pagination-container">
       <div class="" id="">
         <ul class="pagination">
-          <li class="sebelumnya" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">Sebelumnya</a></li>
-          <li class="angka"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0" style="color: #fff;">1</a></li>
-          <li class="selanjutnya" id=""><a href="#" aria-controls="" data-dt-idx="8" tabindex="0">Selanjutnya</a></li>
+          <?php if ($page > 1) : ?>
+            <li class="sebelumnya" id=""><a href="?page=<?= $page - 1 ?>" aria-controls="" data-dt-idx="0" tabindex="0" class="warna-hitam">Sebelumnya</a></li>
+          <?php endif; ?>
+
+          <?php
+          // Menampilkan satu elemen paginasi dengan nomor halaman sesuai dengan variabel $page
+          $displayed_page = max(1, $page); // pastikan tidak kurang dari 1
+          ?>
+          <li class="angka active"><a href="?page=<?= $displayed_page ?>" aria-controls="" data-dt-idx="<?= $displayed_page ?>" tabindex="0" style="color: #fff;"><?= $displayed_page ?></a></li>
+
+          <?php if ($page < $total_pages) : ?>
+            <li class="selanjutnya" id=""><a href="?page=<?= $page + 1 ?>" aria-controls="" data-dt-idx="8" tabindex="0" class="warna-hitam">Selanjutnya</a></li>
+          <?php endif; ?>
         </ul>
       </div>
     </div>
+
     </div>
   </form>
-  </div>
 </main>
 <?= $this->endSection(); ?>

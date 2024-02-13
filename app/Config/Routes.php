@@ -10,6 +10,7 @@ $routes->get('/', 'Auth::login');
 $routes->post('auth/processLogin', 'Auth::processLogin');
 $routes->get('user/dashboard', 'RuanganControllers::booking_ruangan');
 $routes->get('login', 'Auth::login');
+$routes->get('logout', 'Auth::logout');
 
 
 $routes->get('admin/monruangan', 'HistoryControllers::monruangan');

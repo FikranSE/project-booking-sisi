@@ -10,4 +10,9 @@ class UserModel extends Model
     protected $primaryKey = 'username';
 
     protected $allowedFields = ['username', 'email', 'nama', 'telp', 'password', 'role'];
+
+    public function getUserByName($username)
+    {
+        return $this->where('username', $username)->first();
+    }
 }

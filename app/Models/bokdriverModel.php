@@ -28,13 +28,26 @@ class bokdriverModel extends Model
             'delete' => 'CASCADE'
         ]
     ];
-    
+
     public function getPendingBookings()
     {
         return $this->select('booking_driver.*, users.nama')
             ->join('users', 'users.username = booking_driver.username')
             ->where('booking_driver.status', 'pending')
             ->findAll();
-    }  
+    }
 
+    public function getTotalBookingCount()
+    {
+        return $this->countAll();
+    }
+
+    public function getBookingsForToday($date, $status)
+    {
+        return $this->select('booking_driver.*, users.nama as pic') 
+            ->join('users', 'users.username = booking_driver.username', 'left') 
+            
+            ->where('booking_driver.status', $status)
+            ->findAll();
+    }
 }

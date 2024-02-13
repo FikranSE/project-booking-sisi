@@ -18,7 +18,6 @@
                         </button>
                     </div>
                     <script>
-                        // Close the alert when the close button is clicked
                         document.querySelector('.alert .close').addEventListener('click', function() {
                             document.querySelector('.alert').style.display = 'none';
                         });
@@ -27,7 +26,7 @@
                 <form class="login-form" action="<?= site_url('auth/processLogin'); ?>" method="post">
                     <h2 class="login-text">Login</h2>
                     <div class="form-group">
-                        <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+                        <input type="text" id="username" name="username" class="form-control" placeholder="Email or Username" required>
                     </div>
                     <div class="form-group">
                         <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
@@ -36,10 +35,7 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
-
-    <!-- Tambahkan di tampilan halaman login -->
-
-    <!-- Akhir bagian notifikasi -->
