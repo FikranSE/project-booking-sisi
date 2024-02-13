@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\DriverModel;
 use App\Models\bokdriverModel;
+use App\Models\UserModel;
 
 class BokDriver extends BaseController
 {
@@ -31,16 +32,20 @@ class BokDriver extends BaseController
 
     public function detail_booking_driver($bookingId)
     {
+        $usersModel = new UserModel();
         $driverModel = new DriverModel();
         $bookingDriverModel = new bokdriverModel();
 
-        $data['bookingDrivers'] = $bookingDriverModel->find($bookingId);
+        $bookingDriver = $bookingDriverModel->find($bookingId);
+        $picUser = $usersModel->getUserByName($bookingDriver['username']);
 
-
+        $data['bookingDrivers'] = $bookingDriver;
         $data['drivers'] = $driverModel->findAll();
+        $data['picName'] = $picUser ? $picUser['nama'] : 'Unknown';
 
         return view('admin/detail_booking_driver', $data);
     }
+
 
     public function process_approval($bookingId)
     {

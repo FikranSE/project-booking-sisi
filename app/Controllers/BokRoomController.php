@@ -5,15 +5,18 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\bokruanganModel;
 use App\Models\RuanganModel;
+use App\Models\UserModel;
 use CodeIgniter\HTTP\Response;
 
 class BokRoomController extends BaseController
 {
     protected $ruanganModel;
     protected $bookingRuanganModel;
+    protected $usersModel;
 
     public function __construct()
     {
+        $this->usersModel = new UserModel;
         $this->ruanganModel = new ruanganModel;
         $this->bookingRuanganModel = new bokruanganModel;
     }
@@ -26,8 +29,19 @@ class BokRoomController extends BaseController
 
     public function request_detail($id)
     {
-        $data['room'] = $this->ruanganModel->findAll();
-        $data['bookingRuangan'] = $this->bookingRuanganModel->find($id);
+        $usersModel = new UserModel();
+        $bookingRuanganModel = new bokruanganModel();
+        $room = $this->ruanganModel->findAll();
+
+        $bookingRuangan = $this->bookingRuanganModel->find($id);
+
+    
+
+        $picUser = $usersModel->getUserByName($bookingRuangan['username']);
+
+        $data['room'] = $room;
+        $data['bookingRuangan'] = $bookingRuangan;
+        $data['picName'] = $picUser ? $picUser['nama'] : 'Unknown';
 
         return view("admin/detail_booking_room", $data);
     }
@@ -35,8 +49,6 @@ class BokRoomController extends BaseController
     public function proses($id)
     {
         $postData = $this->request->getPost();
-
-        // Cek apakah tombol "Tolak" diklik
         if (isset($postData['reject'])) {
             $this->bookingRuanganModel->update($id, ['status' => 'tolak']);
         } elseif (isset($postData['approve'])) {
@@ -62,4 +74,6 @@ class BokRoomController extends BaseController
 
         return redirect()->to('admin/BookRoom')->with('success', 'Data booking ruangan berhasil dihapus.');
     }
+
+    
 }
