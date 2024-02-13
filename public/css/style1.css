@@ -472,3 +472,7 @@ tbody td .fa-pen-to-square{
 .fa-trash {
   color: #ff0000; /* Red color for the trash icon */
 }
+
+.box-detail{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

@@ -22,19 +22,19 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td class="small-text" style="text-align: center;">15 Januari 2024</td>
-            <td class="small-text" style="text-align: center;">Meeting Room 2</td>
-            <td class="small-text" style="text-align: center;">09.00</td>
-            <td class="small-text" style="text-align: center;">Husna Afiqah Y</td>
-            <td class="small-text">
-              <div class="icon-container">
-                <i class="fa-solid fa-eye" onclick="window.location.href='detail_booking_request'"></i>
-                <i class="fa-solid fa-trash"></i>
-              </div>
-            </td>
-          </tr>
+            <tr>
+            <td style="text-align: center;">1</td>
+              <td class="small-text">13 Feb 2024</td>
+              <td class="small-text">BD011</td>
+              <td class="small-text">Tiara</td>
+              <td class="small-text">Tolak</td>
+              <td class="small-text">
+                <div class="icon-container" style="margin-left: 35%;">
+                  <i class="fa-solid fa-eye m-0" onclick="window.location.href='detail_mondriver'"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
         </tbody>
       </table>
     </div>

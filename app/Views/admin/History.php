@@ -27,21 +27,19 @@
           </tr>
         </thead>
         <tbody>
-          <?php $counter = 1; ?>
-          <?php foreach ($rekapData as $data) : ?>
             <tr>
-              <td style="text-align: center;"><?= $counter++; ?></td>
-              <td class="small-text"><?= $data['nama']; ?></td>
-              <td class="small-text"><?= $data['kapasitas']; ?></td>
-              <td class="small-text"><?= $data['fasilitas']; ?></td>
+              <td style="text-align: center;">1</td>
+              <td class="small-text">13 Feb 2024</td>
+              <td class="small-text">BR001</td>
+              <td class="small-text">Mutir</td>
+              <td class="small-text">Setuju</td>
               <td class="small-text">
                 <div class="icon-container" style="margin-left: 35%;">
-                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_ruangan'"></i>
+                  <i class="fa-solid fa-eye m-0" onclick="window.location.href='detail_monruangan'"></i>
                   <i class="fa-solid fa-trash"></i>
                 </div>
               </td>
             </tr>
-          <?php endforeach; ?>
         </tbody>
       </table>
     </div>
