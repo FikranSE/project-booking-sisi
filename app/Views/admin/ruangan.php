@@ -1,6 +1,11 @@
 <?= $this->extend('admin/templet/layout'); ?>
 <?= $this->section('content'); ?>
-
+<?php
+$items_per_page = 10;
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$start_index = ($page - 1) * $items_per_page;
+$total_pages = ceil(count($room) / $items_per_page);
+?>
 
 <main class="main-content">
   <h2 style="margin-left: 35px;">List Ruangan</h2>
@@ -8,11 +13,16 @@
   <div class="haloa" style="display: flex; justify-content: space-between; align-items: center;">
     <div style="display: flex; align-items: center;">
 
-      <div class="search-container" style="margin-left: 10px;">
-        <i class="fas fa-search"></i>
-        <input type="text" id="search" placeholder="Ketik kata kunci..." style="height: 10%; font-size: small;">
-      </div>
+
+      <form id="searchForm" action="<?= base_url('admin/ruangan'); ?>" method="get">
+        <div class="search-container" style="margin-left: 10px;">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search" name="keyword" placeholder="Ketik kata kunci..." style="height: 10%; font-size: small;" value="<?= $keyword ?>">
+        </div>
+      </form>
     </div>
+
+ 
     <div class="border-right" style="margin-right: 10%;">
       <a href="tambah_ruangan" class="btn-tambah-akun">
         <i class="fas fa-plus"></i> Add Ruangan
@@ -20,13 +30,6 @@
     </div>
   </div>
 
-
-  <?php
-  $items_per_page = 10;
-  $page = isset($_GET['page']) ? $_GET['page'] : 1;
-  $start_index = ($page - 1) * $items_per_page;
-  $total_pages = ceil(count($room) / $items_per_page);
-  ?>
 
   <form class="styled-box-6">
     <div class="table-responsive">
@@ -87,4 +90,6 @@
     </div>
   </form>
 </main>
+
+
 <?= $this->endSection(); ?>

@@ -25,7 +25,7 @@
           </div>
           <div class="col-sm-6 mb-3">
             <label for="password" style="color: #281362; font-weight: 600;">Password</label>
-            <input type="password" class="form-control" id="password" name="password" style="width: 80%; border-radius: 10px;">
+            <input type="password" class="form-control" id="password" name="password" style="width: 80%; border-radius: 10px;" required >
           </div>
 
           <div class="col-sm-6 mb-3">

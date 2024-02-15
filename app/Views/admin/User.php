@@ -14,11 +14,15 @@ $total_pages = ceil(count($users) / $items_per_page);
 
   <div class="haloa" style="display: flex; justify-content: space-between; align-items: center;">
     <div style="display: flex; align-items: center;">
-      <div class="search-container" style="margin-left: 10px;">
-        <i class="fas fa-search"></i>
-        <input type="text" id="search" placeholder="Ketik kata kunci..." style="height: 10%; font-size: small;">
-      </div>
+
+      <form id="searchForm" action="<?= base_url('admin/User'); ?>" method="get">
+        <div class="search-container" style="margin-left: 10px;">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search" name="keyword" placeholder="Ketik kata kunci..." style="height: 10%; font-size: small;" value="<?= $keyword ?>">
+        </div>
+      </form>
     </div>
+
     <div class="border-right" style="margin-right: 10%;">
       <a href="halaman_tambah_akun" class="btn-tambah-akun">
         <i class="fas fa-plus"></i> Add User

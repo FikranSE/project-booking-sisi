@@ -7,47 +7,39 @@
     <form class="styled-box-6" method="post" action="/process_approval/<?= $bookingDrivers['id_booking_driver']; ?>">
       <div class="card-body">
         <?php if (session()->has('error')) : ?>
-        <div class="alert alert-danger" role="alert">
-          <?= session('error') ?>
-        </div>
+          <div class="alert alert-danger" role="alert">
+            <?= session('error') ?>
+          </div>
         <?php endif; ?>
 
         <div class="form-group row">
           <div class="col-sm-6 mb-3">
             <label for="PIC" style="color: #281362; font-weight: 600;">PIC</label>
-            <input type="text" class="form-control" id="pic" name="pic" style="width: 80%; border-radius: 10px;"
-              readonly value="<?= $bookingDrivers['section']; ?>">
+            <input type="text" class="form-control" id="pic" name="pic" style="width: 80%; border-radius: 10px;" readonly value="<?= $picName ?? 'Unknown'; ?>">
           </div>
           <div class="col-sm-6 mb-3">
             <label for="Section" style="color: #281362; font-weight: 600;">Section</label>
-            <input type="text" class="form-control" id="section" name="section" style="width: 80%; border-radius: 10px;"
-              readonly value="<?= $bookingDrivers['section']; ?>">
+            <input type="text" class="form-control" id="section" name="section" style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['section']; ?>">
           </div>
           <div class="col-sm-6 mb-3">
             <label for="Agenda" style="color: #281362; font-weight: 600;">Agenda</label>
-            <input type="text" class="form-control" id="agenda" name="agenda" style="width: 80%; border-radius: 10px;"
-              readonly value="<?= $bookingDrivers['agenda']; ?>">
+            <input type="text" class="form-control" id="agenda" name="agenda" style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['agenda']; ?>">
           </div>
           <div class="col-sm-6 mb-3">
             <label for="Tanggal" style="color: #281362; font-weight: 600;">Tanggal</label>
-            <input type="text" class="form-control" id="tanggal" name="tanggal" style="width: 80%; border-radius: 10px;"
-              readonly value="<?= $bookingDrivers['tanggal']; ?>">
+            <input type="text" class="form-control" id="tanggal" name="tanggal" style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['tanggal']; ?>">
           </div>
           <div class="col-sm-6 mb-3">
-            <label for="JamMulai" style="color: #281362; font-weight: 600;">Jam Mulai</label>
-            <input type="text" class="form-control" id="JamMulai" name="jam_mulai"
-              style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['jam_mulai']; ?>">
+            <label for="JamMulai" style="color: #281362; font-weight: 600;">Jam</label>
+            <input type="text" class="form-control" id="JamMulai" name="jam_mulai" style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['jam_mulai'] . '-' . $bookingDrivers['jam_selesai']; ?>">
           </div>
           <div class="col-sm-6 mb-3">
-            <label for="JamSelesai" style="color: #281362; font-weight: 600;">Jam Selesai</label>
-            <input type="text" class="form-control" id="jamSelesai" name="jam_selesai"
-              style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['jam_selesai']; ?>">
+            <label for="JamSelesai" style="color: #281362; font-weight: 600;">Destinasi</label>
+            <input type="text" class="form-control" id="jamSelesai" name="destinasi" style="width: 80%; border-radius: 10px;" readonly value="<?= $bookingDrivers['destinasi']; ?>">
           </div>
           <div class="col-sm-6 mb-3">
             <label for="Keterangan" style="color: #281362; font-weight: 600;">Keterangan</label>
-            <textarea class="form-control" id="keterangan" name="keterangan"
-              style="width: 80%; border-radius: 10px; height: 100px;"
-              readonly><?= $bookingDrivers['keterangan']; ?></textarea>
+            <textarea class="form-control" id="keterangan" name="keterangan" style="width: 80%; border-radius: 10px; height: 100px;" readonly><?= $bookingDrivers['keterangan']; ?></textarea>
 
           </div>
           <div class="col-sm-6 mb-3">
@@ -55,9 +47,9 @@
             <select class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;">
               <option value="" selected disabled>Pilih Driver</option>
               <?php foreach ($drivers as $driver) : ?>
-              <option value="<?= $driver['id_driver']; ?>">
-                <?= $driver['nama']; ?>
-              </option>
+                <option value="<?= $driver['id_driver']; ?>">
+                  <?= $driver['nama']; ?>
+                </option>
               <?php endforeach; ?>
             </select>
           </div>
@@ -67,10 +59,8 @@
             <!-- <button class="btn btn-outline-primary" style="color: #281362; box-shadow: 2px 2px 5px #888888; border-radius: 20px;">Batal</button> -->
           </div>
           <div class="col-sm-6">
-            <button type="submit" name="reject" class="btn btn-danger"
-              style="color: #ffffff;width: 100px; margin-right: 2%; border-radius: 20px;">Tolak</button>
-            <button type="submit" name="approve" class="btn btn-success"
-              style="color: #ffffff;width: 100px; margin-right: 20%; border-radius: 20px;">Setujui</button>
+            <button type="submit" name="reject" class="btn btn-danger" style="color: #ffffff;width: 100px; margin-right: 2%; border-radius: 20px;">Tolak</button>
+            <button type="submit" name="approve" class="btn btn-success" style="color: #ffffff;width: 100px; margin-right: 20%; border-radius: 20px;">Setujui</button>
           </div>
 
         </div>

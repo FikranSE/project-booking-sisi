@@ -10,5 +10,13 @@ class DriverModel extends Model
     protected $primaryKey = 'id_driver';
     protected $allowedFields = ['nama', 'telp'];
 
-   
+    public function search($keyword)
+    {
+        $this->groupStart()
+            ->like('nama', $keyword)
+            ->orLike('telp', $keyword)
+            ->groupEnd();
+
+        return $this->get()->getResultArray();
+    }
 }

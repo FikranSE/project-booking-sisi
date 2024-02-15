@@ -11,7 +11,15 @@ class Auth extends BaseController
     public function index()
     {
         $usermodel = new UserModel();
-        $data['users'] =  $usermodel->findAll();
+        $keyword = $this->request->getVar('keyword');
+
+        if ($keyword) {
+            $data['users'] = $usermodel->search($keyword);
+        } else {
+            $data['users'] = $usermodel->findAll();
+        }
+
+        $data['keyword'] = $keyword;
 
         return view('admin/User', $data);
     }
@@ -23,11 +31,16 @@ class Auth extends BaseController
 
     public function processLogin()
     {
-        $username = $this->request->getPost('username');
+        $loginInput = $this->request->getPost('username'); // assuming it can be either email or username
         $password = $this->request->getPost('password');
 
         $userModel = new UserModel();
-        $user = $userModel->where('username', $username)->first();
+
+        if (filter_var($loginInput, FILTER_VALIDATE_EMAIL)) {
+            $user = $userModel->where('email', $loginInput)->first();
+        } else {
+            $user = $userModel->where('username', $loginInput)->first();
+        }
 
         if ($user && password_verify($password, $user['password'])) {
             if ($user['role'] == 'admin') {
@@ -37,8 +50,7 @@ class Auth extends BaseController
             }
         }
 
-        // Autentikasi gagal, set flashdata error
-        return redirect()->to('login')->with('error', 'Username atau password salah.');
+        return redirect()->to('login')->with('error', 'Email atau username atau password salah.');
     }
 
 
@@ -152,5 +164,10 @@ class Auth extends BaseController
         $userModel->delete($usersId);
 
         return redirect()->to(site_url('admin/User'))->with('success', 'Data users berhasil dihapus');
+    }
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/login');
     }
 }

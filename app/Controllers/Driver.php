@@ -11,7 +11,14 @@ class Driver extends BaseController
     public function index()
     {
         $drivermodel = new DriverModel();
-        $data['driver'] =  $drivermodel->findAll();
+        $keyword = $this->request->getVar('keyword');
+
+        if ($keyword) {
+            $data['driver'] = $drivermodel->search($keyword);
+        } else {
+            $data['driver'] = $drivermodel->findAll();
+        }
+        $data['keyword'] = $keyword;
 
         return view('admin/Driver', $data);
     }

@@ -36,4 +36,17 @@ class bokruanganModel extends Model
             ->where('booking_ruangan.status', 'pending')
             ->findAll();
     }
+
+    public function getTotalBookingCount()
+    {
+        return $this->countAll();
+    }
+
+    public function getBookingsForToday($date, $status)
+    {
+        return $this->select('booking_ruangan.*, users.nama as pic')
+            ->join('users', 'users.username = booking_ruangan.username', 'left') 
+            ->where('booking_ruangan.status', $status)
+            ->findAll();
+    }
 }

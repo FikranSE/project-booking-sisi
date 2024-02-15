@@ -9,18 +9,22 @@ use App\Models\RuanganModel;
 class RuanganControllers extends BaseController
 {
 
-    public function booking_ruangan()
-    {
-        return view('user/dashboard');
-    }
 
     public function index()
     {
         $ruanganmodel = new RuanganModel();
-        $data['room'] =  $ruanganmodel->findAll();
+        $keyword = $this->request->getVar('keyword');
+
+        if ($keyword) {
+            $data['room'] = $ruanganmodel->search($keyword);
+        } else {
+            $data['room'] = $ruanganmodel->findAll();
+        }
+        $data['keyword'] = $keyword;
 
         return view('admin/ruangan', $data);
     }
+
 
     public function tambah_ruangan()
     {
@@ -95,5 +99,35 @@ class RuanganControllers extends BaseController
         return redirect()->to(site_url('admin/ruangan'))->with('success', 'Data Ruangan berhasil dihapus');
     }
 
-    
+    public function list_ruangan()
+    {
+        $roomModel = new RuanganModel();
+
+        $data['room'] = $roomModel->findAll();
+
+        // Cek apakah form pencarian dikirimkan
+        $searchKeyword = $this->request->getPost('search');
+
+        if (!empty($searchKeyword)) {
+            $data['room'] = $this->filterRooms($data['room'], $searchKeyword);
+        }
+
+        return view('admin/list_ruangan', $data);
+    }
+
+    private function filterRooms($rooms, $searchKeyword)
+    {
+        // Filter data berdasarkan kata kunci pencarian
+        return array_filter($rooms, function ($R) use ($searchKeyword) {
+            return stripos($R['nama'], $searchKeyword) !== false ||
+                stripos($R['kapasitas'], $searchKeyword) !== false ||
+                stripos($R['fasilitas'], $searchKeyword) !== false;
+        });
+    }
+
+
+    public function booking_ruangan()
+    {
+        return view('user/dashboard');
+    }
 }
