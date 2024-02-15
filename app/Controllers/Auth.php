@@ -124,7 +124,6 @@ class Auth extends BaseController
             'email' => 'required|valid_email|is_unique[users.email,username,' . $usersId . ']',
             'nama' => 'required',
             'telp' => 'required',
-            'password' => 'min_length[6]',
             'role' => 'required',
         ]);
 
@@ -140,16 +139,47 @@ class Auth extends BaseController
             'role' => $this->request->getPost('role'),
         ];
 
-        $password = $this->request->getPost('password');
-        if (!empty($password)) {
-            $dataToUpdate['password'] = password_hash($password, PASSWORD_DEFAULT);
-        }
-
         $userModel = new UserModel();
         $userModel->update($usersId, $dataToUpdate);
 
         return redirect()->to(site_url('admin/User'))->with('success', 'Data users berhasil diubah');
     }
+
+    public function update_password($username)
+    {
+        $userModel = new UserModel();
+        $data['users'] = $userModel->where('username', $username)->first();
+
+        if (empty($data['users'])) {
+            return redirect()->to(site_url('admin/User'))->with('error', 'User tidak ditemukan');
+        }
+
+        return view('admin/ubah_password', $data);
+    }
+
+    public function save_password($username)
+    {
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'password' => 'required|min_length[8]',
+        ]);
+
+
+        if (!$validation->withRequest($this->request)->run()) {
+            return redirect()->to("admin/update_password/{$username}")
+                ->withInput()
+                ->with('errors', $validation->getErrors());
+        }
+
+        $newPassword = $this->request->getPost('password');
+
+        $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+        $userModel = new UserModel();
+        $userModel->update($username, ['password' => $hashedPassword]);
+
+        return redirect()->to(site_url('admin/User'))->with('success', 'Password berhasil diubah');
+    }
+
 
 
     public function deleteusers($usersId)

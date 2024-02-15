@@ -24,18 +24,20 @@
             <input type="text" class="form-control" id="telp" name="telp" style="width: 80%; border-radius: 10px;" value="<?= set_value('telp', $users['telp']); ?>">
           </div>
           <div class="col-sm-6 mb-3">
-            <label for="password" style="color: #281362; font-weight: 600;">Password</label>
-            <input type="password" class="form-control" id="password" name="password" style="width: 80%; border-radius: 10px;" required >
-          </div>
-
-          <div class="col-sm-6 mb-3">
             <label for="role" style="color: #281362; font-weight: 600;">Role</label>
-            <select class="form-control" id="role" name="role" style="width: 80%; border-radius: 10px;" value="<?= set_value('role', $users['role']); ?>" >
+            <select class="form-control" id="role" name="role" style="width: 80%; border-radius: 10px;" value="<?= set_value('role', $users['role']); ?>">
               <option value="admin">Admin</option>
               <option value="karyawan">User</option>
             </select>
           </div>
+
+          <div class="col-sm-6 mb-3">
+            <li>
+              <a href="<?= site_url('admin/update_password/' . $users['username']); ?>" data-dt-idx="0" tabindex="0">Ubah Password</a>
+            </li>
+          </div>
         </div>
+
         <div class="form-group row justify-content-between text-right">
           <div class="col-sm-6">
             <!-- <button class="btn btn-outline-primary" style="color: #281362; box-shadow: 2px 2px 5px #888888; border-radius: 20px;">Batal</button> -->
