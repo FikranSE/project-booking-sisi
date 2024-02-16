@@ -18,6 +18,15 @@ class HistoryControllers extends BaseController
         return view('admin/monruangan', ['rekapData' => $mergedData]);
     }
 
+    public function detail_monruangan()
+    {
+        // $bokruanganModel = new bokruanganModel();
+        // $data['bookRoom'] =  $bokruanganModel->findAll();
+
+        // $mergedData = array_merge($data['bookRoom'], $data['bookRoom']);
+        return view('admin/detail_monruangan');
+    }
+
     public function mondriver()
     {
 
@@ -26,6 +35,12 @@ class HistoryControllers extends BaseController
 
         $mergedData = array_merge($data['bookdriver'], $data['bookdriver']);
         return view('admin/mondriver', ['rekapData' => $mergedData]);
+    }
+
+    
+    public function detail_mondriver()
+    {
+        return view('admin/detail_mondriver');
     }
 
     public function dashboard()

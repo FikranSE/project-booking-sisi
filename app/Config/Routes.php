@@ -14,7 +14,11 @@ $routes->get('logout', 'Auth::logout');
 
 
 $routes->get('admin/monruangan', 'HistoryControllers::monruangan');
+$routes->get('admin/detail_monruangan', 'HistoryControllers::detail_monruangan');
+
 $routes->get('admin/mondriver', 'HistoryControllers::mondriver');
+$routes->get('admin/detail_mondriver', 'HistoryControllers::detail_mondriver');
+
 $routes->get('admin/BookingRequest', 'HistoryControllers::BookingRequest');
 $routes->get('admin/dashboard_admin', 'HistoryControllers::dashboard');
 
