@@ -26,7 +26,6 @@ $routes->post('admin/simpanAkun', 'Auth::simpanAkun');
 $routes->get('admin/edit_akun/(:segment)', 'Auth::editusers/$1');
 $routes->post('admin/update_akun/(:segment)', 'Auth::updateusers/$1');
 $routes->get('admin/delete_akun/(:segment)', 'Auth::deleteusers/$1');
-
 $routes->get('admin/update_password/(:any)', 'Auth::update_password/$1');
 $routes->post('admin/save_password/(:any)', 'Auth::save_password/$1');
 

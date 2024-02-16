@@ -10,20 +10,21 @@ echo view('templet/admin/navbar');
         </div>
 
         <div class="col-md-6 order-md-2">
-            <?php if (session()->has('error')) : ?>
-                <div class="alert alert-danger" role="alert">
-                    <?= session('error') ?>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <script>
-                    document.querySelector('.alert .close').addEventListener('click', function() {
-                        document.querySelector('.alert').style.display = 'none';
-                    });
-                </script>
-            <?php endif; ?>
+
             <form class="login-form" action="<?= site_url('auth/processLogin'); ?>" method="post">
+                <?php if (session()->has('error')) : ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?= session('error') ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelector('.alert .close').addEventListener('click', function() {
+                            document.querySelector('.alert').style.display = 'none';
+                        });
+                    </script>
+                <?php endif; ?>
                 <h2 class="login-text">Login</h2>
                 <div class="form-group">
                     <input type="text" id="username" name="username" class="form-control" placeholder="Email or Username" required>

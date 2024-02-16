@@ -40,6 +40,7 @@ $total_pages = ceil(count($users) / $items_per_page);
             <th style="text-align: center;">Nama</th>
             <th style="text-align: center;">E-mail</th>
             <th style="text-align: center;">Telp</th>
+            <th style="text-align: center;">Jataban</th>
             <th style="text-align: center;">Role</th>
             <th style="text-align: center;">Aksi</th>
 
@@ -55,13 +56,14 @@ $total_pages = ceil(count($users) / $items_per_page);
               <td class="small-text"><?= $user['nama']; ?></td>
               <td class="small-text"><?= $user['email']; ?></td>
               <td class="small-text"><?= $user['telp']; ?></td>
+              <td class="small-text"><?= $user['jabatan']; ?></td>
               <td class="small-text"><?= $user['role']; ?></td>
               <td class="small-text">
                 <div class="icon-container" style="margin-left: 35%;">
                   <a href="<?= site_url('admin/edit_akun/' . $user['username']); ?>">
                     <i class="fa-solid fa-pen-to-square"></i>
                   </a>
-                  <a href="<?= site_url('admin/deleteAkun/' . $user['username']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus User ini?')">
+                  <a href="<?= site_url('admin/delete_akun/' . $user['username']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus User ini?')">
                     <i class="fa-solid fa-trash"></i>
                   </a>
                 </div>
