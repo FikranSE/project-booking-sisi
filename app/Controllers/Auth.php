@@ -68,6 +68,7 @@ class Auth extends BaseController
             'email' => 'required|valid_email|is_unique[users.email]',
             'nama' => 'required',
             'telp' => 'required',
+            'jabatan' => 'required',
             'password' => 'required|min_length[6]',
             'konfirmpassword' => 'required|matches[password]',
             'role' => 'required',
@@ -95,6 +96,7 @@ class Auth extends BaseController
             'email' => $this->request->getPost('email'),
             'nama' => $this->request->getPost('nama'),
             'telp' => $this->request->getPost('telp'),
+            'jabatan' => $this->request->getPost('jabatan'),
             'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
             'role' => $this->request->getPost('role'),
         ];
@@ -124,6 +126,7 @@ class Auth extends BaseController
             'email' => 'required|valid_email|is_unique[users.email,username,' . $usersId . ']',
             'nama' => 'required',
             'telp' => 'required',
+            'jabatan' => 'required',
             'role' => 'required',
         ]);
 
@@ -136,6 +139,7 @@ class Auth extends BaseController
             'email' => $this->request->getPost('email'),
             'nama' => $this->request->getPost('nama'),
             'telp' => $this->request->getPost('telp'),
+            'jabatan' => $this->request->getPost('jabatan'),
             'role' => $this->request->getPost('role'),
         ];
 

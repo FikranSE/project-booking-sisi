@@ -1,3 +1,24 @@
+INFO - 2024-02-16 03:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 03:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 03:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 04:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 04:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-16 04:03:18 --> ErrorException: Undefined variable $users
+in APPPATH\Views\admin\halaman_tambah_akun.php on line 47.
+ 1 APPPATH\Views\admin\halaman_tambah_akun.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'H:\\ACA\\K TO P\\project-booking-sisi\\app\\Views\\admin\\halaman_tambah_akun.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project-booking-sisi\\app\\Views\\admin\\halaman_tambah_akun.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/halaman_tambah_akun', [], true)
+ 5 APPPATH\Controllers\Auth.php(59): view('admin/halaman_tambah_akun')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->tambah_akun()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project-booking-sisi\\public\\index.php')
+INFO - 2024-02-16 04:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 04:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 04:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-16 04:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-02-16 03:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 ERROR - 2024-02-16 03:10:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sisi\project-booking-sisi\system\Database\MySQLi\Connection.php:185
 Stack trace:
