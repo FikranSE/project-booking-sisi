@@ -48,7 +48,7 @@ $total_pages = ceil(count($driver) / $items_per_page);
 
             <tr>
               <td style="text-align: center;"><?= $counter++; ?></td>
-              <td class="small-text"><?= $D['nama']; ?></td>
+              <td class="small-text"><?= $D['nama_driver']; ?></td>
               <td class="small-text"><?= $D['telp']; ?></td>
               <td class="small-text">
                 <div class="icon-container" style="margin-left: 35%;">

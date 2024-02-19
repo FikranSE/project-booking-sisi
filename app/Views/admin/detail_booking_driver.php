@@ -4,7 +4,7 @@
   <div style="margin-left: 35px;">
     <h2>Detail Booking Driver</h2>
 
-    <form class="styled-box-6" method="post" action="/process_approval/<?= $bookingDrivers['id_booking_driver']; ?>">
+    <form class="styled-box-6" method="post" action="/process_approval/<?= $bookingDriver['id_booking_driver']; ?>">
       <div class="card-body">
         <?php if (session()->has('error')) : ?>
           <div class="alert alert-danger" role="alert">
@@ -48,7 +48,7 @@
               <option value="" selected disabled>Pilih Driver</option>
               <?php foreach ($drivers as $driver) : ?>
                 <option value="<?= $driver['id_driver']; ?>">
-                  <?= $driver['nama']; ?>
+                  <?= $driver['nama_driver']; ?>
                 </option>
               <?php endforeach; ?>
             </select>

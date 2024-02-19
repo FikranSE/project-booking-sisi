@@ -8,7 +8,7 @@
         <div class="form-group">
           <div class="col-sm-6 mb-3">
             <label for="Nama-driver" style="color: #281362; font-weight: 600;">Nama<sup class="text-danger">*</sup></label>
-            <input type="text" class="form-control" id="Nama-driver" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Driver" required>
+            <input type="text" class="form-control" id="Nama-driver" name="nama_driver" style="width: 80%; border-radius: 10px;" placeholder="Nama Driver" required>
           </div>
           <div class="col-sm-6 mb-3">
             <label for="telp" style="color: #281362; font-weight: 600;">Telp<sup class="text-danger">*</sup></label>

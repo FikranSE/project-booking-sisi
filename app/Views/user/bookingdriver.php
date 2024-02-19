@@ -15,9 +15,9 @@ echo view('templet/admin/head');
             </a>
         </div>
         <div class="col-md-6 order-md-2 ml-auto d-flex justify-content-end">
-            <a class="styled-box-3 mr-2" href="dashboard.html" style="margin-left: 20px;">Beranda</a>
-            <a class="Historya" href="historyDriver.html" style="font-family: 'Poppins', sans-serif;">History</a>
-            <a class="fas fa-user-circle" href="profile.html" style="font-size: 30px; margin-left: 15px;margin-top: 4px;"></a>
+            <a class="styled-box-3 mr-2" href="dashboard" style="margin-left: 20px;">Beranda</a>
+            <a class="Historya" href="historyDriver" style="font-family: 'Poppins', sans-serif;">History</a>
+            <a class="fas fa-user-circle" href="profile" style="font-size: 30px; margin-left: 15px;margin-top: 4px;"></a>
         </div>
     </nav>
     <div class="styled-box">
@@ -25,50 +25,50 @@ echo view('templet/admin/head');
             <h2 class="dashbord-text">Meeting Room and Driver Booking System</h2>
         </div>
         <div class="col-md-6 order-md-2 d-flex">
-            <a class="meetRoom" href="dashboard.html">
+            <a class="meetRoom" href="dashboard">
                 <i class="fa-solid fa-door-open mr-2"></i> Meeting Room
             </a>
-            <a class="styled-box-5" href="bookingdriver.html">
+            <a class="styled-box-5" href="bookingdriver">
                 <i class="fa-solid fa-car mr-2"></i> Driver
             </a>
         </div>
 
-        <form class="styled-box-2 ">
+        <form class="styled-box-2 action="<?= site_url('bookingdriver/bookDriver'); ?>" method="post" >
             <div class="card-body">
                 <div class="form-group3 row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <label for="PIC"> PIC <sup class="text-danger">*</sup> </label>
-                        <input type="text" class="form-control-PIC" id="PIC" name="PIC" style="width: 80%;">
+                        <input type="text" class="form-control-PIC" id="PIC" name="pic" value="<?= session()->get('nama') ?>" required style="width: 80%;">
                     </div>
                     <div class="col-sm-6">
                         <label for="Section"> Section <sup class="text-danger">*</sup> </label>
-                        <input type="text" class="form-control-PIC" id="Section" name="Section" style="width: 80%;">
+                        <input type="text" class="form-control-PIC" id="Section" name="section"  required style="width: 80%;">
 
                     </div>
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <label for="Agenda"> Agenda <sup class="text-danger">*</sup> </label>
-                        <input type="text" class="form-control-PIC" id="Agenda" name="Agenda" style="width: 80%;">
+                        <input type="text" class="form-control-PIC" id="Agenda" name="agenda" required style="width: 80%;">
                     </div>
                     <div class="col-sm-6">
                         <label for="Destinasi"> Destinasi <sup class="text-danger">*</sup> </label>
-                        <input type="text" class="form-control-PIC" id="Destinasi" name="Destinasi" style="width: 80%;">
+                        <input type="text" class="form-control-PIC" id="Destinasi" name="destinasi" required style="width: 80%;">
 
                     </div>
                     <div class="col-sm-6">
                         <label for="Tanggal"> Tanggal <sup class="text-danger">*</sup> </label>
-                        <input type="date" class="form-control-PIC" id="Tanggal" name="Tanggal" style="width: 80%;">
+                        <input type="date" class="form-control-PIC" id="Tanggal" name="tanggal" required style="width: 80%;">
                     </div>
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <label for="JamMulai"> Jam Mulai <sup class="text-danger">*</sup> </label>
-                        <input type="time" class="form-control-PIC" id="JamMulai" name="JamMulai" style="width: 80%;">
+                        <input type="time" class="form-control-PIC" id="JamMulai" name="jam_mulai" required style="width: 80%;">
                     </div>
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <label for="JamSelesai"> Jam Selesai <sup class="text-danger">*</sup> </label>
-                        <input type="time" class="form-control-Agenda" id="JamSelesai" name="JamSelesai" style="width: 80%;">
+                        <input type="time" class="form-control-Agenda" id="JamSelesai" name="jam_selesai" required style="width: 80%;">
                     </div>
                     <div class="col-sm-6">
                         <label for="Keterangan"> Keterangan </label>
-                        <textarea type="text" class="form-control-Keterangan" id="Keterangan" name="Keterangan" style="width: 80%;"></textarea>
+                        <textarea type="text" class="form-control-Keterangan" id="Keterangan" name="keterangan" style="width: 80%;"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="button-booking">
@@ -82,7 +82,7 @@ echo view('templet/admin/head');
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="dataTables_length" id="_length">
+                        <!-- <div class="dataTables_length" id="_length">
                             <label> Tampilkan
                                 <select name="_length" aria-controls="" class="form-control input-sm" data-gtm-form-interact-field-id="0">
                                     <option value="10">10</option>
@@ -92,7 +92,7 @@ echo view('templet/admin/head');
                                 </select>
                                 Entri
                             </label>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-sm-6 search-container">
                         <div id="" class="dataTables_filter">
@@ -106,25 +106,28 @@ echo view('templet/admin/head');
                     <table role="table" aria-busy="false" aria-colcount="6" class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table" id="__BVID__56">
                         <thead class="thead-blue">
                             <tr>
-                                <th>No.</th>
-                                <th>Tanggal</th>
-                                <th>Ruangan</th>
-                                <th>Jam Mulai</th>
-                                <th>Jam Selesai</th>
-                                <th>PIC</th>
-                                <th>Section</th>
+                                <th style="text-align: center;">No.</th>
+                                <th style="text-align: center;">Tanggal</th>
+                                <th style="text-align: center;">Destinasi</th>
+                                <th style="text-align: center;">Jam Mulai</th>
+                                <th style="text-align: center;">Jam Selesai</th>
+                                <th style="text-align: center;">PIC</th>
+                                <th style="text-align: center;">Section</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td class="small-text">15 Januari 2024</td>
-                                <td class="small-text">Meeting Room 2</td>
-                                <td class="small-text">09.00</td>
-                                <td class="small-text">12.00</td>
-                                <td class="small-text">Husna Afiqah Y</td>
-                                <td class="small-text">shhsall</td>
-                            </tr>
+                        <?php  $counter = 1; ?>
+                        <?php foreach ($bookings as $booking): ?>
+                        <tr>
+                            <td style="text-align: center;"><?= $counter++; ?></td>
+                            <td style="text-align: center;"><?= esc($booking['tanggal']); ?></td>
+                            <td style="text-align: center;"><?= esc($booking['destinasi']); ?></td>
+                            <td style="text-align: center;"><?= esc($booking['jam_mulai']); ?></td>
+                            <td style="text-align: center;"><?= esc($booking['jam_selesai']); ?></td>
+                            <td style="text-align: center;"><?= esc($booking['nama']); ?></td>
+                            <td style="text-align: center;"><?= esc($booking['section']); ?></td>
+                        </tr>
+                        <?php endforeach; ?>          
                         </tbody>
                     </table>
                 </div>
@@ -144,7 +147,5 @@ echo view('templet/admin/head');
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
-</html>

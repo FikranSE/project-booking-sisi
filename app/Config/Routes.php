@@ -8,15 +8,38 @@ use CodeIgniter\Router\RouteCollection;
 //controller method
 $routes->get('/', 'Auth::login');
 $routes->post('auth/processLogin', 'Auth::processLogin');
-$routes->get('user/dashboard', 'RuanganControllers::booking_ruangan');
+// $routes->get('user/dashboard', 'UserBookRuangan::booking_ruangan');
 $routes->get('login', 'Auth::login');
 $routes->get('logout', 'Auth::logout');
 
 
-$routes->get('admin/monruangan', 'HistoryControllers::monruangan');
-$routes->get('admin/mondriver', 'HistoryControllers::mondriver');
-$routes->get('admin/BookingRequest', 'HistoryControllers::BookingRequest');
-$routes->get('admin/dashboard_admin', 'HistoryControllers::dashboard');
+//bookingruangan
+$routes->post('dashboard/bookRoom', 'UserBRController::bookRoom'); // Untuk mengirim data form ke method bookRoom
+$routes->get('user/dashboard', 'UserBRController::showBookings');
+
+//bookingdriver
+$routes->post('user/bookingdriver', 'UserBDController::bookDriver'); // Untuk mengirim data form ke method bookRoom
+$routes->get('user/bookingdriver', 'UserBDController::showBookings');
+//$routes->get('bokdriver/booking_driver', 'bokdriverController::booking_driver');
+
+
+//history user
+$routes->get('user/historyRuangan', 'HistoryController::historyRuangan');
+$routes->get('user/historyDriver', 'HistoryController::historyDriver');
+$routes->get('user/batalkanBookingRuangan/(:segment)', 'HistoryController::batalkanBookingRuangan/$1');
+$routes->get('user/batalkanBookingDriver/(:segment)', 'HistoryController::batalkanBookingDriver/$1');
+
+//monitoring ruangan
+$routes->get('admin/monruangan', 'MonitoringControllers::monruangan');
+$routes->get('admin/detail_monruangan', 'MonitoringControllers::detail_monruangan');
+
+//monitoring driver
+$routes->get('admin/mondriver', 'MonitoringControllers::mondriver');
+$routes->get('admin/detail_mondriver/(:segment)', 'MonitoringControllers::detail_mondriver/$1');
+
+//booking request
+// $routes->get('admin/BookingRequest', 'MonitoringControllers::BookingRequest');
+$routes->get('admin/dashboard_admin', 'HistoryController::dashboard');
 
 
 //crud user
@@ -28,7 +51,6 @@ $routes->post('admin/update_akun/(:segment)', 'Auth::updateusers/$1');
 $routes->get('admin/delete_akun/(:segment)', 'Auth::deleteusers/$1');
 $routes->get('admin/update_password/(:any)', 'Auth::update_password/$1');
 $routes->post('admin/save_password/(:any)', 'Auth::save_password/$1');
-
 
 
 //crud driver
@@ -63,3 +85,4 @@ $routes->get('admin/detail_booking_room/(:segment)', 'BokRoomController::request
 $routes->post('proses/(:segment)', 'BokRoomController::proses/$1');
 $routes->get('admin/BookRoom', 'proses::process_approval');
 $routes->get('admin/delete_booking/(:segment)', 'BokRoomController::delete_booking/$1');
+

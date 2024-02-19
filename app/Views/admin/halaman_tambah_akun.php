@@ -57,6 +57,7 @@
           <div class="col-sm-6 mb-3">
             <label for="role" style="color: #281362; font-weight: 600;">Role<sup class="text-danger">*</sup></label>
             <select class="form-control" id="role" name="role" style="width: 80%; border-radius: 10px;">
+            <option value="" selected disabled>Pilih Role</option>  
               <option value="" selected disabled>Pilih Role</option>
               <option value="admin">Admin</option>
               <option value="karyawan">Karyawan</option>

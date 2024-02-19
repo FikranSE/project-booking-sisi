@@ -10,7 +10,7 @@
         <div class="form-group row">
           <div class="col-sm-6 mb-3">
             <label for="Nama-ruangan" style="color: #281362; font-weight: 600;">Nama Ruangan <sup class="text-danger">*</sup></label>
-            <input type="text" class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Ruangan" value="<?= set_value('nama', $room['nama']); ?>">
+            <input type="text" class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Ruangan" value="<?= set_value('nama', $room['nama_ruangan']); ?>">
           </div>
           <div class="col-sm-6 mb-3">
             <label for="Kapasitas" style="color: #281362; font-weight: 600;">Kapasitas <sup class="text-danger">*</sup></label>

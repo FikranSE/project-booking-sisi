@@ -47,7 +47,7 @@
                             <option value="" selected disabled>Pilih Ruangan</option>
                             <?php foreach ($room as $r) : ?>
                                 <option value="<?= $r['id_ruangan']; ?>">
-                                    <?= $r['nama']; ?>
+                                    <?= $r['nama_ruangan']; ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>

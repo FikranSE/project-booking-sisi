@@ -48,7 +48,7 @@ $total_pages = ceil(count($room) / $items_per_page);
           <?php foreach (array_slice($room, $start_index, $items_per_page) as $R) : ?>
             <tr>
               <td style="text-align: center;"><?= $counter++; ?></td>
-              <td class="small-text"><?= $R['nama']; ?></td>
+              <td class="small-text"><?= $R['nama_ruangan']; ?></td>
               <td class="small-text"><?= $R['kapasitas']; ?></td>
               <td class="small-text"><?= $R['fasilitas']; ?></td>
               <td class="small-text">

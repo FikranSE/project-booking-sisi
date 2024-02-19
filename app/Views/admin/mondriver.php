@@ -27,22 +27,23 @@
           </tr>
         </thead>
         <tbody>
-          <?php $counter = 1; ?>
-          <?php foreach ($rekapData as $data) : ?>
-            <tr>
-              <td style="text-align: center;"><?= $counter++; ?></td>
-              <td class="small-text"><?= $data['nama']; ?></td>
-              <td class="small-text"><?= $data['kapasitas']; ?></td>
-              <td class="small-text"><?= $data['fasilitas']; ?></td>
+        <?php foreach ($bookdriver as $key => $booking) : ?>
+          <tr>
+              <td><?= $key + 1 ?></td>
+              <td><?= $booking['tanggal'] ?></td>
+              <td><?= $booking['id_booking_driver'] ?></td>
+              <td><?= $booking['pic'] ?></td>
+              <td><?= $booking['status'] ?></td>
               <td class="small-text">
-                <div class="icon-container" style="margin-left: 35%;">
-                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_driver'"></i>
-                  <i class="fa-solid fa-trash"></i>
-                </div>
+                  <div class="icon-container">
+                      <a href="detail_mondriver/<?= $booking['id_booking_driver']; ?>" class="fa-solid fa-eye m-0"></a>
+                      <i class="fa-solid fa-trash"></i>
+                  </div>
               </td>
-            </tr>
-          <?php endforeach; ?>
-        </tbody>
+          </tr>
+      <?php endforeach; ?>
+  </tbody>
+
       </table>
     </div>
     <div class="pagination-container">

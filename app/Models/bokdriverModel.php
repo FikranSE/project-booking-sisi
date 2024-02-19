@@ -49,4 +49,9 @@ class bokdriverModel extends Model
             ->where('booking_driver.status', $status)
             ->findAll();
     }
+
+    public function getBookingDrivers()
+    {
+        return $this->findAll(); 
+    }
 }

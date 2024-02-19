@@ -43,7 +43,7 @@
               <th style="text-align: center;">Jenis</th>
               <th style="text-align: center;">Kode Booking</th>
               <th style="text-align: center;">PIC</th>
-              <th style="text-align: center;">Aksi</th>
+              <th style="text-align: center;">Detail</th>
             </tr>
           </thead>
 

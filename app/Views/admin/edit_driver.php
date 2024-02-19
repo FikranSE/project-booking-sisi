@@ -8,7 +8,7 @@
       <form method="post" action="<?= site_url('admin/update_driver/' . $driver['id_driver']) ?>">
         <div class="col-sm-6 mb-3">
           <label for="Nama" style="color: #281362; font-weight: 600;">Nama<sup class="text-danger">*</sup></label>
-          <input type="text" class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Driver" value="<?= set_value('nama', $driver['nama']); ?>">
+          <input type="text" class="form-control" id="nama" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Driver" value="<?= set_value('nama', $driver['nama_driver']); ?>">
           <?= isset($validation) ? '<div class="text-danger">' . $validation->getError('nama') . '</div>' : ''; ?>
         </div>
         <div class="col-sm-6 mb-3">

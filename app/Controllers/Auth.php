@@ -31,7 +31,7 @@ class Auth extends BaseController
 
     public function processLogin()
     {
-        $loginInput = $this->request->getPost('username'); // assuming it can be either email or username
+        $loginInput = $this->request->getPost('username'); // asumsi dapat berupa email atau username
         $password = $this->request->getPost('password');
 
         $userModel = new UserModel();
@@ -43,6 +43,11 @@ class Auth extends BaseController
         }
 
         if ($user && password_verify($password, $user['password'])) {
+            // Simpan username dalam sesi
+            $session = \Config\Services::session();
+            $session->set('username', $user['username']);
+            $session->set('nama', $user['nama']);
+
             if ($user['role'] == 'admin') {
                 return redirect()->to('admin/dashboard_admin');
             } elseif ($user['role'] == 'karyawan') {

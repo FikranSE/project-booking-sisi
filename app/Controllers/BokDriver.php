@@ -49,30 +49,30 @@ class BokDriver extends BaseController
 
     public function process_approval($bookingId)
     {
-
         $postData = $this->request->getPost();
-
+    
         // Cek apakah tombol "Tolak" diklik
         if (isset($postData['reject'])) {
             // Proses penolakan dan update status di database
             $this->bookingDriverModel->update($bookingId, ['status' => 'tolak']);
+    
+            // Anda dapat menambahkan langkah-langkah lain yang diperlukan di sini
         } elseif (isset($postData['approve'])) {
             // Validasi apakah driver telah dipilih
             if (empty($postData['nama'])) {
                 // Handle jika driver tidak dipilih
-                return redirect()->to("admin/detail_booking_driver/" . implode("/", (array) $bookingId))->with('error', 'Pilih driver terlebih dahulu.');
+                return redirect()->to("admin/detail_booking_driver/{$bookingId}")->with('error', 'Pilih driver terlebih dahulu.');
             }
-
+    
             $driverId = $postData['nama'];
             $this->bookingDriverModel->update($bookingId, [
                 'status' => 'setuju',
                 'id_driver' => $driverId,
             ]);
-        } else {
-            return redirect()->to('admin/detail_booking_driver/{$bookingId}');
         }
-        return redirect()->to("admin/booking_driver");
-    }
+    
+    }        
+
 
     public function delete_booking_driver($bookingId)
     {

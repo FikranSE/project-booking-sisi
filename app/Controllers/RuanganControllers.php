@@ -126,8 +126,8 @@ class RuanganControllers extends BaseController
     }
 
 
-    public function booking_ruangan()
-    {
-        return view('user/dashboard');
-    }
+    // public function booking_ruangan()
+    // {
+    //     return view('user/dashboard');
+    // }
 }

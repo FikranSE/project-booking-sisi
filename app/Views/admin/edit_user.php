@@ -30,8 +30,9 @@
           <div class="col-sm-6 mb-3">
             <label for="role" style="color: #281362; font-weight: 600;">Role</label>
             <select class="form-control" id="role" name="role" style="width: 80%; border-radius: 10px;" value="<?= set_value('role', $users['role']); ?>">
+              <option value="" selected disabled>Pilih Role</option>  
               <option value="admin">Admin</option>
-              <option value="karyawan">User</option>
+              <option value="karyawan">Karyawan</option>
             </select>
           </div>
 
